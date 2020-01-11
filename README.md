@@ -28,3 +28,23 @@ C:\Bitnami\wampstack-7.3.13-0\mysql\bin 폴더로 이동.
     USE "name";
 
 이제부터 "name"에 대한 데이터베이스를 대상으로 명령을 실행
+
+    CREATE TABLE topic(
+        id INT(11) NOT NULL AUTO_INCREMENT,
+        title VARCHAR(100) NOT NULL,
+        description TEXT NULL,
+        created DATETIME NOT NULL,
+        author VARCHAR(30) NULL,
+        profile VARCHAR(100) NULL,
+        PRIMARY KEY(id)
+    )
+
+테이블 생성, length는 보통 11을 사용함.
+
+NOT NULL : 값이 없는것을 허용하지 않음.
+
+AUTO_INCREAMENT : 데이터가 추가될때 자동으로 값이 1씩 증가한다.
+
+NULL : 값이 없는것을 허용한다.
+
+PRIMARY KEY(id) : 메인 키를 알려준다
