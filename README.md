@@ -15,7 +15,7 @@ C:\Bitnami\wampstack-7.3.13-0\mysql\bin 폴더로 이동.
 
     CREATE DATABASE "name";
 
-데이터 베이스 생성<br\>
+데이터 베이스 생성
 
     DROP DATABASE "name";
 
