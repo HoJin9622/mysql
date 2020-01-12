@@ -89,3 +89,11 @@ topic table의 id, title, created, author 열만 출력하는데 author가 "egoi
     UPDATE topic SET description = "Oracle is ...", title = "Oracle" WHERE id = 2;
 
 MySQL 에서의 UPDATE
+
+    DELETE FROM topic WHERE id = 5;
+
+id 값이 5인 topic 테이블의 행 삭제
+
+    RENAME TABLE topic TO topic_backup;
+
+TABLE 이름을 변경한다.
