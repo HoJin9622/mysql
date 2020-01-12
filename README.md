@@ -109,3 +109,9 @@ topic 테이블과 author 테이블을 topic 테이블의 author_id와 author �
     SELECT topic.id AS topic_id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id;
 
 id를 topic_id 로 출력해줌.
+
+    mysql -uroot -p -hlocalhost
+
+-hlocalhost 는 내 서버에 접속한다는것.
+
+ex) -hgoogle.com 구글 서버에 접속
