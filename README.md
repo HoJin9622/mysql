@@ -97,3 +97,15 @@ id 값이 5인 topic 테이블의 행 삭제
     RENAME TABLE topic TO topic_backup;
 
 TABLE 이름을 변경한다.
+
+    SELECT * FROM topic LEFT JOIN author ON topic.author_id = author.id;
+
+topic 테이블과 author 테이블을 topic 테이블의 author_id와 author 테이블의 id를 기준으로 JOIN 한다
+
+     SELECT topic.id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id;
+
+위에 생성한 테이블에서 author_id와 author.id를 뺌
+
+    SELECT topic.id AS topic_id, title, description, created, name, profile FROM topic LEFT JOIN author ON topic.author_id = author.id;
+
+id를 topic_id 로 출력해줌.
