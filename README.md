@@ -48,3 +48,24 @@ AUTO_INCREAMENT : 데이터가 추가될때 자동으로 값이 1씩 증가한�
 NULL : 값이 없는것을 허용한다.
 
 PRIMARY KEY(id) : 메인 키를 알려준다
+
+    DESC topic;
+    DESCRIBE topic;
+
+topic table을 보여준다.
+
+    INSERT INTO topic (
+        title, description, created, author, profile
+    ) VALUES (
+        'MySQL',
+        'MySQL is ...',
+        NOW(),
+        'egoing',
+        'developer'
+    );
+
+table에 값을 삽입
+
+    SELECT * FROM topic;
+
+topic table의 모든 데이터를 가져온다.
