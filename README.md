@@ -69,3 +69,19 @@ table에 값을 삽입
     SELECT * FROM topic;
 
 topic table의 모든 데이터를 가져온다.
+
+    SELECT id, title, created, author FROM topic;
+
+topic table의 id, title, created, author 열만 출력한다.
+
+    SELECT id, title, created, author FROM topic WHERE author="egoing";
+
+topic table의 id, title, created, author 열만 출력하는데 author가 "egoing"인 것만 출력한다.
+
+    SELECT id, title, created, author FROM topic WHERE author="egoing" ORDER BY id DESC;
+
+오름차순으로 출력
+
+    SELECT id, title, created, author FROM topic WHERE author="egoing" ORDER BY id DESC LIMIT 2;
+
+2개까지만 보여줌
