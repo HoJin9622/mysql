@@ -85,3 +85,7 @@ topic table의 id, title, created, author 열만 출력하는데 author가 "egoi
     SELECT id, title, created, author FROM topic WHERE author="egoing" ORDER BY id DESC LIMIT 2;
 
 2개까지만 보여줌
+
+    UPDATE topic SET description = "Oracle is ...", title = "Oracle" WHERE id = 2;
+
+MySQL 에서의 UPDATE
