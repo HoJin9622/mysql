@@ -15,19 +15,19 @@ C:\Bitnami\wampstack-7.3.13-0\mysql\bin 폴더로 이동.
 
     CREATE DATABASE "name";
 
-데이터 베이스 생성
+데이터 베이스 생성<br>
 
     DROP DATABASE "name";
 
-데이터 베이스 삭제
+데이터 베이스 삭제<br>
 
     SHOW DATABASES;
 
-데이터 베이스 목록 보기
+데이터 베이스 목록 보기<br>
 
     USE "name";
 
-이제부터 "name"에 대한 데이터베이스를 대상으로 명령을 실행
+이제부터 "name"에 대한 데이터베이스를 대상으로 명령을 실행<br>
 
     CREATE TABLE topic(
         id INT(11) NOT NULL AUTO_INCREMENT,
@@ -47,12 +47,12 @@ AUTO_INCREAMENT : 데이터가 추가될때 자동으로 값이 1씩 증가한�
 
 NULL : 값이 없는것을 허용한다.
 
-PRIMARY KEY(id) : 메인 키를 알려준다
+PRIMARY KEY(id) : 메인 키를 알려준다<br>
 
     DESC topic;
     DESCRIBE topic;
 
-topic table을 보여준다.
+topic table을 보여준다.<br>
 
     INSERT INTO topic (
         title, description, created, author, profile
@@ -64,7 +64,7 @@ topic table을 보여준다.
         'developer'
     );
 
-table에 값을 삽입
+table에 값을 삽입<br>
 
     SELECT * FROM topic;
 
